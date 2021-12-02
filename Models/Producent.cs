@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace serwis_z_filmami.Models
 {
-    public class Aktor
+    public class Producent
     {
         [Key]
         public int id { get; set; }
-
         public string profilePictureURL { get; set; }
         public string fullName { get; set; }
         public string bio { get; set; }

@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace serwis_z_filmami.Models
 {
-    public class Aktor
+    public class Kino
     {
         [Key]
         public int id { get; set; }
-
-        public string profilePictureURL { get; set; }
-        public string fullName { get; set; }
-        public string bio { get; set; }
+        public string logo { get; set; }
+        public string nazwa { get; set; }
+        public string opis { get; set; }
     }
 }
