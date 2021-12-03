@@ -20,6 +20,19 @@ namespace serwis_z_filmami.Models
 
         public KategoriaFilmowa KategoriaFilmowa { get; set; }
 
+        //Relacje
+        public List<Aktor_Film> Aktorzy_Filmy { get; set; }
+
+        //Kino
+        public int kinoId { get; set; }
+        [ForeingKey("kinoId")]
+        public Kino Kino{ get; set; }
+        
+        //Producent
+        public int producentId { get; set; }
+        [ForeingKey("kinoId")]
+        public Producent Producent { get; set; }
+
 
     }
 }

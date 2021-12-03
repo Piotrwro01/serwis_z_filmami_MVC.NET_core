@@ -13,5 +13,9 @@ namespace serwis_z_filmami.Models
         public string profilePictureURL { get; set; }
         public string fullName { get; set; }
         public string bio { get; set; }
+
+
+        //relacje
+        public List<Film> Filmy { get; set; }
     }
 }

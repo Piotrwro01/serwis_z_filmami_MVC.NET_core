@@ -13,5 +13,8 @@ namespace serwis_z_filmami.Models
         public string logo { get; set; }
         public string nazwa { get; set; }
         public string opis { get; set; }
+
+        //Relacje
+        public List<Film> Filmy { get; set; }
     }
 }
